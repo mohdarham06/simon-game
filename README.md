@@ -12,6 +12,6 @@ A classic memory and pattern recognition game.
 
 ## Demo
 
-You can play the game [here](https://simon-sonic.netlify.app/)
+* You can play the game: https://simon-sonic.netlify.app/
 
 
