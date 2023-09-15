@@ -171,7 +171,8 @@ function resetGame() {
     gameStarted = false;
     gameSequence = [];
     userSequence = [];
-    scoreElement.innerText = `score: ${userSequence.length}`
+    displayScoreLength = userSequence.length;
+    scoreElement.innerText = `score: ${displayScoreLength}`
     level = 0;
 }
 
