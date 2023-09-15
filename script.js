@@ -42,7 +42,6 @@ function scoreUpdation() {
         displayScoreLength = currentScore;
         scoreElement.innerText = `score: ${displayScoreLength}`
     }
-    scoreElement.innerText = `score: ${displayScoreLength}`
 
     if (displayScoreLength > highestScore) {
         highestScore = displayScoreLength;
