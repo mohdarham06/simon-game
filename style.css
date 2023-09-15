@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* UNIVERSAL SELECTOR */
+* {
+    font-family: 'Mooli','Ubuntu', sans-serif;
+
+    /** It will remove all default 
+    ** margins and paddings */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+
+/* || ROOT || */
+:root {
+    --dark: #2d374e;
+    --darkest: #301142;
+    --grey: #7183a5;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+    --whitet: whitesmoke;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #9a75ac;
+    color: whitesmoke;
+}
+
+.root {
+    width: 100%;
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #301142;
+}
+
+
+
+main {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header,
+footer {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2,
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-box {
+    display: flex;
+}
+
+.btn {
+    width: 9rem;
+    height: 9rem;
+    border: 4px solid black;
+    margin: 0.7rem;
+    cursor: pointer;
+}
+
+.start-btn {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    border: 1px solid white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.start-btn:active {
+    background: white;
+    color: #111827;
+    border: 1px solid #111827;
+}
+
+.score-container {
+    width: 100%;
+    text-align: end;
+    margin-right: 30%;
+    font-size: 1.2rem;
+}
+
+
+
+.green {
+    background-color: #44c455;
+    border-radius: 85% 15% 40% 60% / 85% 60% 40% 15%;
+}
+
+.red {
+    background-color: #c04646;
+    border-radius: 15% 85% 60% 40% / 60% 85% 15% 40%;
+}
+
+.yellow {
+    background-color: #d3c832;
+    border-radius: 60% 40% 15% 85% / 15% 40% 60% 85%;
+}
+
+.blue {
+    background-color: #466db6;
+    border-radius: 40% 60% 85% 15% / 40% 15% 85% 60%;
+}
+
+.green-flash {
+    background: rgb(198, 252, 191);
+    background: radial-gradient(circle, rgb(198, 252, 191) 15%, rgb(109, 228, 125) 75%);
+}
+
+.red-flash {
+    background: rgb(245, 180, 180);
+    background: radial-gradient(circle, rgb(245, 180, 180) 15%, rgb(218, 107, 107) 75%);
+
+}
+
+.yellow-flash {
+    background: rgb(247, 248, 184);
+    background: radial-gradient(circle, rgb(247, 248, 184) 15%, rgb(238, 228, 94) 75%);
+}
+
+.blue-flash {
+    background: rgb(189, 224, 255);
+    background: radial-gradient(circle, rgb(189, 224, 255) 15%, rgb(125, 165, 240) 75%);
+}
+
+.game-over {
+    background-color: red;
+}
+
+
+
+footer .credit {
+    color: #9c9fa5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer div {
+    height: 1px;
+    width: 90%;
+    background-color: #9c9fa5;
+    margin-bottom: 1rem;
+}
+
+
+
+/* --  > 576 px px  */
+@media only screen and (max-width: 576px) {
+
+    html {
+        font-size: 70%;
+    }
+}
